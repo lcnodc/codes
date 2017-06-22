@@ -15,7 +15,7 @@ Entre outras coisas, esse repositório terá como objetivo também:
 Para criar esse PE, fiz uma rápida pesquisa nos principais tópicos relacionados em livros de Python e cursos on-line. 
 Relacionei os temas que considerei importantes, organizando-os em duas partes. 
 
-1.Tudo que considerava essencial para o básico na linguagem;
+1. Tudo que considerava essencial para o básico na linguagem;
 2. Relacionei vários itens que considerava avançado, mas também vários assuntos já vistos na primeira parte e que considerei importante revisar a partir de uma segunda referência bibliográfica;
 
 Na maior parte da pesquisa utilizei livros, mas todo o conteúdo foi e está sendo reunido na medida que evoluo nos estudos.
@@ -68,7 +68,7 @@ _Sugestões, correções e tudo mais serão muito bem vindas_.
 16. Testing, profiling and dealing with exceptions, (ROMANO, 213);
 17. Revisão Geral
 
-**Referências**
+### Referências
 
 BORGES, L. E. Python para Desenvolvedores. Rio de Janeiro: Edição do Autor, 2010. 360 p.
 
