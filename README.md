@@ -64,7 +64,7 @@ _Sugestões, correções e tudo mais serão muito bem vindas_.
 12. Saving time and memory, (ROMANO, 135);
 13. Decorator and iterators 2, (ROMANO, 173);
 14. Programação funcional, (BORGES, 97);
-15. Expressões regulares, ;
+15. Expressões regulares;
 16. Testing, profiling and dealing with exceptions, (ROMANO, 213);
 17. Revisão Geral
 
