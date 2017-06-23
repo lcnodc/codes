@@ -72,7 +72,7 @@ cd virtualenv-15.1.0/
 ~/.pythons/python3.3/bin/python setup.py install
 ```
 
-**Criando sua virtualenv**
+### Criando sua virtualenv
 
 ```
 mkdir /home/${USER}/.virtualenvs
@@ -100,22 +100,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-Nesse ponto, você tem um ambiente praticamente pronto para o desenvolvimento Python.
+Pronto. Nesse ponto, você tem um ambiente praticamente pronto para o desenvolvimento Python.
 
-Se quiser fazer um teste para ver se tudo está ok.
+### Referências
 
-```
->>> import ssl 
->>> import readline
->>> import sqlite3
->>>
-```
-
-Se todas retornarem vazio, será poque:
-
-TODO
-
-
-
-
-
+- Building Python from source with zlib support, https://stackoverflow.com/q/12344970
+- Common Build Problemns, https://github.com/pyenv/pyenv/wiki/Common-build-problems
+- Is it possible to install another version of Python to Virtualenv?, https://stackoverflow.com/a/5507373
