@@ -1,17 +1,17 @@
 
 # Configurando meu ambiente para desenvolvimento Python no Linux.
 
-Vou relacionar os passos que fiz para configurar um ambiente de desenvolvimento
+Vou relacionar os passos que fiz para configurar um ambiente de estudo de Python
 em meu pc.
 
 Obviamente, esta é só a forma que fiz naquela ocasião, podendo ser feita a 
-mesma coisa de formas mais simples ou até mesmo mais complexas.
+mesma coisa de formas mais simples ou até mesmo mais complexa.
 
 Como tudo roda em uma máquina virtual com o sistema Ubuntu 16.04, instalado do 
 core, algumas libs não existiam e quando realizei a instalação do Python tive 
 que instalar essas libs.
 
-Outro detalhe, é que apesar de ter instalado o Ubuntu do core, e em alguns 
+Outro detalhe, é que apesar de ter instalado o Ubuntu do core e em alguns 
 casos pacote a pacote, ao final já tinha o Python nas versões 2.x e 3.x, mas 
 optei por realizar uma nova instalação do Python em meu /home/${USER}/ pois 
 gostaria de concentrar todas as versões que fosse utilizar em um só lugar.
@@ -20,7 +20,7 @@ Enfim, vamos lá...
 
 ### Instalando o Python
 
-Primeira verifique se seu sistema já possui as libs abaixo, caso contrário,
+Primeiramente verifique se seu sistema já possui as libs abaixo, caso contrário,
 instale todas. Serão úteis.
 
 ```
@@ -46,7 +46,7 @@ cd Python3.3
 zlib zlibmodule.c -I$(prefix)/include -L$(exec_prefix)/lib -lz
 ```
 
-*alterando para o diretório /Modules/zlib. Compilei o módulo:*
+*alterando para o diretório /Modules/zlib. Compilei o módulo da zlib:*
 
 ```
 ./configure
@@ -77,7 +77,7 @@ cd virtualenv-15.1.0/
 ```
 mkdir /home/${USER}/.virtualenvs
 cd /home/${USER}/.virtualenvs
-~/.pythons/python-x/bin/virtualenv py3.3 --python=/home/${USER}/.pythons/python3.3/bin/python-x
+~/.pythons/python3.3/bin/virtualenv py3.3 --python=/home/${USER}/.pythons/python3.3/bin/python-x
 ```
 
 ### Ativando a virtualenv
@@ -87,20 +87,22 @@ cd ~/.virtualenvs/py3.3/bin
 source ./activate
 
 (py3.3)$ python
-Python 3.3 (r271:86832, Jul 31 2011, 15:52:39) 
-[GCC 4.4.5] on linux2
+Python 3.3 (default, Jun 01 2017, 15:52:39) 
+[GCC 5.4.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
 
 (py3.3)$ deactivate
 $ python
-Python 3.3 (r266:84292, Sep 15 2010, 15:52:39) 
-[GCC 4.4.5] on linux2
+Python 3.3 (default, Jun 01 2017, 15:55:00) 
+[GCC 5.4.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-Pronto. Nesse ponto, você tem um ambiente praticamente pronto para o desenvolvimento Python.
+Pronto. Nesse ponto, você tem um ambiente praticamente pronto para seus estudos Python.
+
+Lembrando que na maioria das distribuições Linux você já encontrará o Python nas versões 2.x e 3.x pronto para seus estudos. Como disse realizei a instalação adicional, mais por curiosidade e porque queria utilizar versões diferentes e centralizá-las em uma pasta local.
 
 ### Referências
 
