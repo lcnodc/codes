@@ -46,7 +46,7 @@ _Sugestões, correções e tudo mais serão muito bem vindas_.
 
 **1. Parte**
  
-0. Introdução: Instalação da linguagem, ambiente virtual e configuração de um editor.
+0. [Introdução: Instalação da linguagem, ambiente virtual e configuração de um editor][0].
 1. Variáveis e Tipo de dados, (MATTHES, 19);
 2. Lista, (MATTHES, 37);
 3. Tuples e dicionários, (MATTHES, 69), (ROMANO, 95);
@@ -75,3 +75,5 @@ BORGES, L. E. Python para Desenvolvedores. Rio de Janeiro: Edição do Autor, 20
 MATTHES, E. Python Crash Course: A hands-on, Project Based(...). San Francisco: No Starch Press, 2016. 562 p.
 
 ROMANO,F. Learning Python: Learn to code like a professional(...). Birmingham: Packt Publishing, 2015. 443 p.
+
+[0]: https://github.com/lcnodc/codes/tree/master/00-introducao
