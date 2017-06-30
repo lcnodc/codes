@@ -65,8 +65,10 @@ _Sugestões, correções e tudo mais serão muito bem vindas_.
 13. Decorator and iterators 2, (ROMANO, 173);
 14. Programação funcional, (BORGES, 97);
 15. Expressões regulares;
-16. Testing, profiling and dealing with exceptions, (ROMANO, 213);
-17. Revisão Geral
+16. Testing, profiling and dealing with exceptions,(ROMANO, 213) ;
+17. Testes automatizados, (BORGES, 141);
+18. Metaclasses, (BORGES, 134);
+19. Revisão Geral
 
 ### Referências
 
