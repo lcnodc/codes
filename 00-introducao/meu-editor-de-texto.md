@@ -97,6 +97,51 @@ Seguem alguns exemplos:
 
 }
 ```
+### Snippets
+
+São trechos de códigos, geralmente inseridos com a utilização de um atalho de teclado.
+
+- **Criando um novo:** tools >> Developter >> New Snippet...
+
+Um template será aberto para definição de seu snippet.
+
+```xml
+<snippet>
+    <content><![CDATA[
+Hello, ${1:this} is a ${2:snippet}.
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <!-- <tabTrigger>hello</tabTrigger> -->
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
+```
+Para personalizar seu snippet, realize as seguintes alterações:
+
+- Em _content_, insira o conteúdo do seu snippet.
+- Em _tabTrigger_ defina o nome do snippet;
+- Em _scope_ define o tipo de arquivo que utilizará o snippet;
+
+Ao final, seu arquivo deverá ter mais ou menos o seguinte formato:
+
+```xml
+<snippet>
+    <content><![CDATA[
+Meu primeiro ${1:snippet}.
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>meu_snippet</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+</snippet>
+```
+
+No exemplo acima, foi definido ${1:snippet} como ponto de parada do cursor. Ou seja, uma variável que poderá ser alterada 
+quando seu snippet for inserido.
+
+Salve o arquivo: CTRL+ s, o que deve ser feito em {$USER}/.config/sublime-text-3/Packages/User/
+
+Para inserir o snippet, utilize CTRL+Shift+P e selecione-o na lista. Caso não aparecer na lista, digite snippet e a relação de todos os snippets será listada.
 
 ### Plugins
 
@@ -115,8 +160,10 @@ mas provavelmente voltarei para registrar outras opções interessantes:
 - Real Python, [Setting Up Sublime Text 3 for Full Stack Python Development][2].
 - SublimeText Dicas, [Sublime Text como IDE para Python][3].
 - SublimeText, [Documentation][4].
+- SublimeText Dicas, [Snippets: como criar atalhos para trechos de código ou texto][5].
 
 [1]: https://www.sublimetext.com/docs/3/linux_repositories.html
 [2]: https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/
 [3]: http://sublimetextdicas.com.br/sublime-text-como-ide-para-python/
 [4]: https://www.sublimetext.com/docs/3/
+[5]: http://sublimetextdicas.com.br/snippets-como-criar-atalhos-para-trechos-de-codigo-ou-texto/
