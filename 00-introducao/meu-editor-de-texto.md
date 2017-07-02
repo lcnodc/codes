@@ -50,7 +50,7 @@ as palavras iguais e inicio a edição.
 que deseja editar simultaneamente.
 
 
-### Configuração
+### Configuração - Settings
 
 São várias as opções de configuração, mas vou citar aqui algumas que já fiz e 
 estou gostando. Provavelmente, com o passar do tempo, sentirei a necessidade 
@@ -97,11 +97,12 @@ Seguem alguns exemplos:
 
 }
 ```
+
 ### Snippets
 
 São trechos de códigos, geralmente inseridos com a utilização de um atalho de teclado.
 
-- **Criando um novo:** tools >> Developter >> New Snippet...
+- **Criando um novo snippet:** tools >> Developter >> New Snippet...
 
 Um template será aberto para definição de seu snippet.
 
@@ -142,6 +143,21 @@ quando seu snippet for inserido.
 Salve o arquivo: CTRL+ s, o que deve ser feito em {$USER}/.config/sublime-text-3/Packages/User/
 
 Para inserir o snippet, utilize CTRL+Shift+P e selecione-o na lista. Caso não aparecer na lista, digite snippet e a relação de todos os snippets será listada.
+
+- **Criando um atalho para seu novo snippet:** Preferences >> Key Bindings
+
+Dois paineis semelhantes ao das configurações se abrirão. Entre com o código abaixo, 
+no painel da direita. 
+
+```
+{ "keys": ["ctrl+1"], "command": "insert_snippet", "args": {"name": "Packages/User/myFunction.sublime-snippet"} }
+```
+
+O painel da esquerda, refere-se ao atalhos já existentes e pode ser utilizado para verificar 
+a combinação de teclas já existentes.
+
+Procure um comando que ainda não esteja sendo utilizado e insira em keys.
+Na chave name, informe o endereço do arquivo xml do seu snippets e pronto.
 
 ### Plugins
 
