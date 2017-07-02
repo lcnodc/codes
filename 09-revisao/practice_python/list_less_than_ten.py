@@ -16,6 +16,10 @@ Extras:
     - Ask the user for a number and return a list that contains only
     elements from the original list a that are smaller than that number
     given by the user.
+    
+Credits:
+    Michele Pratusevich
+    http://www.practicepython.org/exercise/2014/02/15/03-list-less-than-ten.html
 """
 
 # Lista inicial.
