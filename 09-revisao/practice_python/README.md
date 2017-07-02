@@ -1,4 +1,4 @@
-# Pratice Python
+# Practice Python
 
 Nesta seção, vou colocar alguns códigos referentes a exercícios disponibilizados 
 no site Practice Python.
