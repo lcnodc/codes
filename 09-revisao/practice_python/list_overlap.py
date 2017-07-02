@@ -17,12 +17,12 @@ Extras:
     this out at this point - we’ll get to it soon).
 
 References:
-
     Python for Begginers:
     http://www.pythonforbeginners.com/random/how-to-use-the-random-module-in-python
 
 """
 
+# Importa o método randint do módulo random.
 from random import randint
 
 a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
@@ -66,7 +66,7 @@ Retorna somente os elementos da lista em que a condição for True.
 """
 print("Lista c (filter):", list(filter(lambda x: x in a, b)))
 
-"""Extras 1 e 2.
+"""Extras e outros exemplos utilizando conjuntos ao invés de listas.
 Problema da repetição resolvido. Ao criar a lista, converte-a em um
 conjunto.
 """
@@ -88,9 +88,18 @@ random_list_c = []
 
 for i in random_list_a:
     if i in random_list_b:
-        if i not in random_list_c:
+        if i not in random_list_c:  # Verificação desnecessária.
             random_list_c.append(i)
 
 print("Lista a:", random_list_a)
 print("Lista b:", random_list_b)
 print("Lista c:", random_list_c)
+
+# Utilizando o operador intersection.
+print("Lista c (com conjuntos):", random_list_a & random_list_b)
+
+# Inline, tudo em uma só linha.
+print(
+    "Lista c (com conjuntos, inline):",
+    set([randint(1, 20) for i in range(10)]) &
+    set([randint(1, 20) for i in range(10)]))
