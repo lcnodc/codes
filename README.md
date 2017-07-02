@@ -38,7 +38,7 @@ Por fim, gostaria de deixar como TODO a adição de novas partes, que irão abor
 - Lapidar esse repositório, melhorando meus códigos;
 - Traduzir o repositório para outro idioma, a fim de alcançar outras pessoas;
 - Um pequeno projeto para praticar os assuntos estudados;
-- Me tornar desenvolvedor Python
+- Trabalhar com desenvolvimento Python
 
 _Sugestões, correções e tudo mais serão muito bem vindas_.
 
@@ -55,7 +55,7 @@ _Sugestões, correções e tudo mais serão muito bem vindas_.
 6. Funções e Escopos, (MATTHES, 133), (ROMANO, 107);
 7. Escrita, leitura de arquivos e Tratamento de Exceções, (MATTHES, 189);
 8. Orientação a Objeto, (MATTHES, 161), (BORGES, 109); 
-9. Revisão Geral
+9. [Revisão Geral][9].
  
 **2. Parte**
  
@@ -76,6 +76,7 @@ BORGES, L. E. Python para Desenvolvedores. Rio de Janeiro: Edição do Autor, 20
 
 MATTHES, E. Python Crash Course: A hands-on, Project Based(...). San Francisco: No Starch Press, 2016. 562 p.
 
-ROMANO,F. Learning Python: Learn to code like a professional(...). Birmingham: Packt Publishing, 2015. 443 p.
+ROMANO, F. Learning Python: Learn to code like a professional(...). Birmingham: Packt Publishing, 2015. 443 p.
 
 [0]: https://github.com/lcnodc/codes/tree/master/00-introducao
+[9]: https://github.com/lcnodc/codes/tree/master/09-revisao
