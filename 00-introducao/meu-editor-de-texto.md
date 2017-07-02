@@ -153,7 +153,7 @@ no painel da direita.
 { "keys": ["ctrl+1"], "command": "insert_snippet", "args": {"name": "Packages/User/myFunction.sublime-snippet"} }
 ```
 
-O painel da esquerda, refere-se ao atalhos já existentes e pode ser utilizado para verificar 
+O painel da esquerda, refere-se aos atalhos já existentes e pode ser utilizado para verificar 
 a combinação de teclas já existentes.
 
 Procure um comando que ainda não esteja sendo utilizado e insira em keys.
@@ -177,9 +177,11 @@ mas provavelmente voltarei para registrar outras opções interessantes:
 - SublimeText Dicas, [Sublime Text como IDE para Python][3].
 - SublimeText, [Documentation][4].
 - SublimeText Dicas, [Snippets: como criar atalhos para trechos de código ou texto][5].
+- Millwardesque, [Speed up development using keyboard-triggered snippets in Sublime Text 2][6].
 
 [1]: https://www.sublimetext.com/docs/3/linux_repositories.html
 [2]: https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/
 [3]: http://sublimetextdicas.com.br/sublime-text-como-ide-para-python/
 [4]: https://www.sublimetext.com/docs/3/
 [5]: http://sublimetextdicas.com.br/snippets-como-criar-atalhos-para-trechos-de-codigo-ou-texto/
+[6]: http://www.millwardesque.com/speed-development-using-keyboard-triggered-snippets-sublime-text-2/
