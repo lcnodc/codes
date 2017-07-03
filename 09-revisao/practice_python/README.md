@@ -17,6 +17,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 3. [List Less Than Ten][3]
 4. [Divisors][4]
 5. [List Overlap][5]
+6. [String Lists][6]
 
 ### Rerências
 
@@ -27,7 +28,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 [3]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/list_less_than_ten.py
 [4]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/divisors.py
 [5]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/list_overlap.py
-
+[6]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/string_lists.py
 
 [1001]: http://www.practicepython.org/exercises/
 [1002]: http://www.practicepython.org
