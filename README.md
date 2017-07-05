@@ -52,7 +52,7 @@ _Sugestões, correções e tudo mais serão muito bem vindas_.
 3. Tuples e dicionários, (MATTHES, 69), (ROMANO, 95);
 4. If statements, iterators and making decisions, (MATTHES, 75), (ROMANO, 73);
 5. User input and while loops, (MATTHES, 117);
-6. Funções e Escopos, (MATTHES, 133), (ROMANO, 107);
+6. [Funções e Escopos, (MATTHES, 133), (ROMANO, 107)][6];
 7. Escrita, leitura de arquivos e Tratamento de Exceções, (MATTHES, 189);
 8. Orientação a Objeto, (MATTHES, 161), (BORGES, 109); 
 9. [Revisão Geral][9].
@@ -79,4 +79,5 @@ MATTHES, E. Python Crash Course: A hands-on, Project Based(...). San Francisco: 
 ROMANO, F. Learning Python: Learn to code like a professional(...). Birmingham: Packt Publishing, 2015. 443 p.
 
 [0]: https://github.com/lcnodc/codes/tree/master/00-introducao
+[6]: https://github.com/lcnodc/codes/tree/master/06-funcoes-e-escopos
 [9]: https://github.com/lcnodc/codes/tree/master/09-revisao
