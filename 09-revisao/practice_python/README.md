@@ -19,6 +19,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 5. [List Overlap][5]
 6. [String Lists][6]
 7. [List Comprehensions][7]
+8. [Rock Paper Scissors][8]
 
 ### Rerências
 
@@ -31,6 +32,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 [5]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/list_overlap.py
 [6]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/string_lists.py
 [7]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/list_comprehensions.py
+[8]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/rock_paper_scissors.py
 
 [1001]: http://www.practicepython.org/exercises/
 [1002]: http://www.practicepython.org
