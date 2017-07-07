@@ -20,7 +20,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 6. [String Lists][6]
 7. [List Comprehensions][7]
 8. [Rock Paper Scissors][8]
-9. [Guessiong Game One][9]
+9. [Guessing Game One][9]
 
 ### Rerências
 
