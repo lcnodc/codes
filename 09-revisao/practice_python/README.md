@@ -20,6 +20,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 6. [String Lists][6]
 7. [List Comprehensions][7]
 8. [Rock Paper Scissors][8]
+9. [Rock Paper Scissors][9]
 
 ### Rerências
 
@@ -33,6 +34,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 [6]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/string_lists.py
 [7]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/list_comprehensions.py
 [8]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/rock_paper_scissors.py
+[9]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/guessing_game_one.py
 
 [1001]: http://www.practicepython.org/exercises/
 [1002]: http://www.practicepython.org
