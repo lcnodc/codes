@@ -26,6 +26,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 12. [List Ends][12]
 13. [Fibonacci][13]
 14. [List Remove Duplicates][14]
+15. [Reverse Word Order][15]
 
 ### Rerências
 
@@ -45,6 +46,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 [12]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/list_ends.py
 [13]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/fibonacci.py
 [14]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/list_remove_duplicates.py
+[15]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/reverse_word_order.py
 
 [1001]: http://www.practicepython.org/exercises/
 [1002]: http://www.practicepython.org
