@@ -24,6 +24,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 10. [List Overlap Comprehensions][10]
 11. [Check Primality Functions][11]
 12. [List Ends][12]
+13. [List Ends][13]
 
 ### Rerências
 
@@ -41,6 +42,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 [10]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/list_overlap_comprehensions.py
 [11]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/check_primality_functions.py
 [12]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/list_ends.py
+[13]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/list_remove_duplicates.py
 
 [1001]: http://www.practicepython.org/exercises/
 [1002]: http://www.practicepython.org
