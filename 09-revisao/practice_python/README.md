@@ -25,7 +25,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 11. [Check Primality Functions][11]
 12. [List Ends][12]
 13. [Fibonacci][13]
-14. [List Remove Duplicates][13]
+14. [List Remove Duplicates][14]
 
 ### Rerências
 
