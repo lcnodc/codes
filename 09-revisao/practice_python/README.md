@@ -23,7 +23,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 9. [Guessing Game One][9]
 10. [List Overlap Comprehensions][10]
 11. [Check Primality Functions][11]
-12. [Lists Ends][12]
+12. [List Ends][12]
 
 ### Rerências
 
