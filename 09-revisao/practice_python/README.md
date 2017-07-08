@@ -24,7 +24,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 10. [List Overlap Comprehensions][10]
 11. [Check Primality Functions][11]
 12. [List Ends][12]
-13. [List Ends][13]
+13. [List Remove Duplicates][13]
 
 ### Rerências
 
