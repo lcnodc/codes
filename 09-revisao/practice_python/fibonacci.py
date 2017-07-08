@@ -21,4 +21,4 @@ def fibonaccis(x: int) ->list:
 
 number = int(input("Enter with a number: "))
 
-print(fibonaccis2(number))
+print(fibonaccis(number))
