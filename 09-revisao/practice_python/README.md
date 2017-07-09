@@ -27,6 +27,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 13. [Fibonacci][13]
 14. [List Remove Duplicates][14]
 15. [Reverse Word Order][15]
+16. [Password Generator][16]
 
 ### Rerências
 
@@ -47,6 +48,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 [13]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/fibonacci.py
 [14]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/list_remove_duplicates.py
 [15]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/reverse_word_order.py
+[16]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/password_generator.py
 
 [1001]: http://www.practicepython.org/exercises/
 [1002]: http://www.practicepython.org
