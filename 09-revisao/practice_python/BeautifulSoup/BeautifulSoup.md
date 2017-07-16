@@ -1,7 +1,9 @@
-# BeautifulSoup
+# BeautifulSoup 4
 
 Transforma um complexo documento HTML em uma complexa árvore de objetos Python.
 
+_Este documento cobre uma pequena parte dos recursos da BeautifulSoup4, e foi
+fortemente inspirado nas referências relacionadas abaixo_.
 
 ### Instalação 
 
@@ -31,7 +33,7 @@ Para realizar o parser, importe a lib para seu código:
 from bs4 import BeautifulSoup
 ```
 
-e passe para o construtor de BeautifulSoup o documento, que pode ser passados
+e passe para o construtor de BeautifulSoup o documento, que pode ser passado
 de duas formas:
 
 - Atráves do endereço de memória do documento:
@@ -41,7 +43,7 @@ with open("index2.html", "r") as file:
     soup = BeautifulSoup(file, "html.parser")
 ```
 
-- Através do endereço url do documentos:
+- Através do endereço url do documento:
 
 ```python
 url = "http://www.practicepython.com"
@@ -164,3 +166,11 @@ print("
 **find_previous e all_previous**
 
 **CSS Selectors**
+
+### Referências
+
+Crummy: The Site, [Beautiful Soup Documentation][1]
+Read the Docs, [Beautiful Soup Documentation][2]
+
+[1]: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+[2]: https://media.readthedocs.org/pdf/beautiful-soup-4/latest/beautiful-soup-4.pdf
