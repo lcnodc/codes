@@ -7,7 +7,7 @@ Transforma um complexo documento HTML em uma complexa árvore de objetos Python.
 
 Com o pip:
 
-```python
+```bash
 $ pip install bs4
 ```
 
@@ -19,8 +19,8 @@ http://www.crummy.com/software/BeautifulSoup/download/4.x
 
 Descompacte e execute:
 
-```python
-$python setup.py install
+```bash
+$ python setup.py install
 ```
 
 ### Fazendo uma sopa
@@ -84,20 +84,65 @@ print("Acessando atributos multivalorados de uma tag:", soup.a.["class"]])
 
 **NavigableString**
 
+Uma string corresponde a um texto dentro de uma tag. BeautifulSoup usa a
+classe NavigableString para representar esses textos:
+
+```python
+print("Imprimindo uma string de uma tag: ", soup.title.string)
+```
+
 **BeautifulSoup**
 
-**Comentários e Outros Especiais**
+O objeto BeautifulSoup representa o documento como um todo, suporta a maioria
+dos métodos descritos em _Navegando na árvore_ e _Procurando na árvore_.
 
+```python
+soup = BeautifulSoup(file, "html.parser")
+```
 
 ### Navegando na árvore
 
-- Para baixo
+**Para baixo**
 
-- Para cima
+Muitas tags podem conter string e outras tag. Estes elementos são filhos de
+tags. Beautiful Soup provê vários atributos para navegar e iterar sobre os
+filhos das tags.
 
-- Para os lados
+- Navegando usando nomes de tags
 
-- Para baixo e adiante
+A forma mais simples de navegar é informar o nome da tag. 
+
+```python
+print("Exibindo o head: ", soup.head)
+print("Exibindo o head: ", soup.head.title)
+```
+
+- .contents and .children
+
+Uma lista dos filhos de uma tag é retornada com o atributos .contents
+
+```python
+print("Exibindo o conteúdo de head com .contents:", soup.head.contents)
+```
+
+Com .children, assim como .contents é retornado o conteúdo de uma tag, 
+representado por um objeto iterator, que poderá ser utilizado com um for.
+
+```python
+print("Recuperando o iterador com children de head:\n", soup.head.children)
+print("
+    Recuperando os elementos de head: ",
+    [element for element in soup.head.children])
+```
+
+**Para cima**
+
+
+
+
+**Para os lados**
+
+**Para baixo e adiante**
 
 
 ### Procurando na árvore
