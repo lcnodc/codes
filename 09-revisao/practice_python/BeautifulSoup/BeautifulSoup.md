@@ -170,7 +170,5 @@ print("
 ### Referências
 
 - Crummy: The Site, [Beautiful Soup Documentation][1]
-- Read the Docs, [Beautiful Soup Documentation][2]
 
 [1]: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
-[2]: https://media.readthedocs.org/pdf/beautiful-soup-4/latest/beautiful-soup-4.pdf
