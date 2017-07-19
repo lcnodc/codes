@@ -137,15 +137,75 @@ print("
     [element for element in soup.head.children])
 ```
 
+- .decendants
+
+Retorna uma lista de todos os elementos descendentes, parecido com children, 
+mas esse age de forma recursiva.
+
+```python
+print("Retorna tags com .descendants: ", [element for element in soup.head])
+```
+
+- .string
+
+Retorna a string imediatamente abaixo da tag referenciada. Caso possua mais de
+uma, None será retornado.
+
+```python
+print("Recupera a string de uma tag (title): ", soup.title.string)
+print("Recupera a string de uma tag (body): ", soup.body.string)
+```
+
+.strings and stripped_strings
+
+Se existir mais de uma string dentro de uma tag, use the .strings. Esse
+generator proporcionará a iteração sobre os elementos retornados.
+
+```python
+[print(element) for element in soup.body.strings]
+```
+
+Porém, para cada string, uma quebra de linha será retornada, o que poderá ser resolvido com stripped_strings.
+
+```python
+[print(element) for element in soup.body.stripped_strings]
+```
+
 **Para cima**
 
+- .parent
 
+Retorna o elemento imediatamente superior (pai) da tag.
 
+print("Acessando parent de title:", soup.title.parent)
+
+- .parents
+
+Retorna todos os elementos acima da tag selecionada.
+
+[elements for element in soup.find(id="extra").parents]
 
 **Para os lados**
 
+- .next_sibling ou .previous_sibling
+
+Retorna o elemento imediato de mesmo nível do documento.
+
+print("div header-center: ", soup.find('div', 'header center').next_sibling.next_sibling.next_sibling)
+
+- .next_siblings ou .previous_siblings
+
+Retorna todos os elementos de mesmo nível do documento.
+
 **Para baixo e adiante**
 
+- next_element ou .previous_element
+
+Retorna o elemento, parseado imeadiatamente.
+
+print("Recuperando próximo elemento: ", soup.a.next_element)
+
+- next_element ou .previous_element
 
 ### Procurando na árvore
 
@@ -153,19 +213,113 @@ print("
 
 **find_all**
 
-**find**
+- string
+
+Uma simples string passada como argumento representando uma tag, retorna todas
+as tags iguais existentes no documento.
+
+soup.find_all('a')
+
+- regular expression
+
+Também é possível passar um expressão regular para o filtro.
+
+import re
+
+soup.find_all(class_=re.compile("sister$"))
+
+- list
+
+É possível passar uma lista que irá retorna todos elementos correspondentes a
+qualquer um dos argumentos passados.
+
+soup.find_all(["a", "div"])
+
+- True
+
+Passando True como argumento, todas as tags serão retornadas.
+
+soup.find_all(True)
+
+- function
+
+Também é possível passar uma function como argumento para find_all. As tags 
+retornadas serão todas que a function retornar True.
+
+def has_class(tag):
+    return tag.has_attr("class")
+
+
+soup.find_all(has_class)
+
+**find_all()**
+
+Procura através das tag's descendentes e retorna todas os descendentes que 
+coincidem com o argumento informados. Pode receber como argumento:
+
+- name:
+
+Retorna todas as tags com nome igual ao argumento informado, podendo ser o 
+argumento uma string, uma expressão regular, uma lista, uma function ou um
+valor True.
+
+- Keywords arguments
+
+Retorna todas as tags do valor passado como chave que possuem o atributo igual
+ao valor passado.
+
+- Pesquisando pela classe CSS
+
+Pode-se pesquisar pela classe css utilizando a palavra-chave css_ juntamente
+com find_all().
+
+- O argumento string
+
+Utilizando a palavra chave string pode-se pesquisar por termos existentes nas
+string ao invés das tags.
+
+- O argumento limit
+
+limit é um argumento que define a quantidade de elementos retornados quando 
+utilizado o método find_all.
+
+- O argumento recursive
+
+A pesquisa com find_all é recursiva por padrão. Ou seja, o retorno será uma 
+análise de todos os descendentes da tag pesquisada, suas filhas, filhas das
+filhas e assim por diante.
+
 
 **find_parent e parents**
 
+Realiza uma pesquisa no documento para cima, considerando a tag atual.
+
 **find_next_sibling e siblings**
+
+Itera sobre o resto de um elemento de next_sibling na árvore, retornando dos os
+elementos em que o argumento passado coincidir.
 
 **find_previous_sibling e siblings**
 
+Itera sobre o resto de um elemento de previous_sibling na árvore, retornando
+dos os elementos em que o argumento passado coincidir.
+
 **find_next e all_next**
+
+Itera sobre a próxima/todas a(s) tag(s) do documento, que coincidirem com o
+valor passado como argumento.
 
 **find_previous e all_previous**
 
+Itara sobre as strings que anteriores à tag pesquisada no documento, sendo que
+find_previous retorna somente a primeira que e all retorna todas que
+coincidirem com o argumento.
+
 **CSS Selectors**
+
+BS4 suporta a maioria dos seletores CSS utilizados, basta passar uma string
+dentro do método .select de um objeto Tag/BeautifulSoup.
+
 
 ### Referências
 
