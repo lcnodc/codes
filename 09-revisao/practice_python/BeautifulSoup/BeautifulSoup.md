@@ -177,13 +177,17 @@ Porém, para cada string, uma quebra de linha será retornada, o que poderá ser
 
 Retorna o elemento imediatamente superior (pai) da tag.
 
+```python
 print("Acessando parent de title:", soup.title.parent)
+```
 
 - .parents
 
 Retorna todos os elementos acima da tag selecionada.
 
+```python
 [elements for element in soup.find(id="extra").parents]
+```
 
 **Para os lados**
 
@@ -191,7 +195,11 @@ Retorna todos os elementos acima da tag selecionada.
 
 Retorna o elemento imediato de mesmo nível do documento.
 
-print("div header-center: ", soup.find('div', 'header center').next_sibling.next_sibling.next_sibling)
+```python
+print(
+    "div header-center: ", soup.find('div',
+    'header center').next_sibling.next_sibling.next_sibling)
+```
 
 - .next_siblings ou .previous_siblings
 
@@ -203,7 +211,9 @@ Retorna todos os elementos de mesmo nível do documento.
 
 Retorna o elemento, parseado imeadiatamente.
 
+```python
 print("Recuperando próximo elemento: ", soup.a.next_element)
+```
 
 - next_element ou .previous_element
 
@@ -218,39 +228,49 @@ print("Recuperando próximo elemento: ", soup.a.next_element)
 Uma simples string passada como argumento representando uma tag, retorna todas
 as tags iguais existentes no documento.
 
-soup.find_all('a')
+```python
+soup.find_all("a")
+```
 
 - regular expression
 
 Também é possível passar um expressão regular para o filtro.
 
+```python
 import re
 
 soup.find_all(class_=re.compile("sister$"))
+```
 
 - list
 
 É possível passar uma lista que irá retorna todos elementos correspondentes a
 qualquer um dos argumentos passados.
 
+```python
 soup.find_all(["a", "div"])
+```
 
 - True
 
 Passando True como argumento, todas as tags serão retornadas.
 
+```python
 soup.find_all(True)
+```
 
 - function
 
 Também é possível passar uma function como argumento para find_all. As tags 
 retornadas serão todas que a function retornar True.
 
+```python
 def has_class(tag):
     return tag.has_attr("class")
 
 
 soup.find_all(has_class)
+```
 
 **find_all()**
 
@@ -262,6 +282,8 @@ coincidem com o argumento informados. Pode receber como argumento:
 Retorna todas as tags com nome igual ao argumento informado, podendo ser o 
 argumento uma string, uma expressão regular, uma lista, uma function ou um
 valor True.
+
+
 
 - Keywords arguments
 
