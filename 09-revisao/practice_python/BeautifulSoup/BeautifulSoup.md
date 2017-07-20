@@ -283,27 +283,45 @@ Retorna todas as tags com nome igual ao argumento informado, podendo ser o
 argumento uma string, uma expressão regular, uma lista, uma function ou um
 valor True.
 
-
+```python
+print(soup.find_all("a"))
+```
 
 - Keywords arguments
 
 Retorna todas as tags do valor passado como chave que possuem o atributo igual
 ao valor passado.
 
+```python
+print(soup.find_all(id="extra"))
+```
+
 - Pesquisando pela classe CSS
 
 Pode-se pesquisar pela classe css utilizando a palavra-chave css_ juntamente
 com find_all().
+
+```python
+print(soup.find_all(class_="paragrafo_especial"))
+```
 
 - O argumento string
 
 Utilizando a palavra chave string pode-se pesquisar por termos existentes nas
 string ao invés das tags.
 
+```python
+print(soup.find_all(string=re.compile("nisi.$")))
+```
+
 - O argumento limit
 
 limit é um argumento que define a quantidade de elementos retornados quando 
 utilizado o método find_all.
+
+```python
+print(soup.find_all("p", limit=1))
+```
 
 - O argumento recursive
 
@@ -333,7 +351,7 @@ valor passado como argumento.
 
 **find_previous e all_previous**
 
-Itara sobre as strings que anteriores à tag pesquisada no documento, sendo que
+Itera sobre as strings que anteriores à tag pesquisada no documento, sendo que
 find_previous retorna somente a primeira que e all retorna todas que
 coincidirem com o argumento.
 
