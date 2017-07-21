@@ -35,7 +35,7 @@ def get_secret_number():
     return str(random.randint(1000, 9999))
 
 
-def get_matches(secret, user):
+def get_cows_and_bulls(secret, user):
     cows = bulls = 0
 
     for i in range(4):
@@ -47,17 +47,21 @@ def get_matches(secret, user):
     return cows, bulls
 
 
-guessed = False
-guesses = 0
-secret = get_secret_number()
+if __name__ == "__main__":
 
-while not guessed:
-    user = input("Guess a 4-digit number: ")
-    guesses += 1
+    guessed = False
+    attempts = 0
+    secret = get_secret_number()
 
-    if user == secret:
-        guessed = True
+    while not guessed:
+        user = input("Guess a 4-digit number: ")
+        attempts += 1
 
-    print("%i cows, %i bulls" % (get_matches(secret, user)))
+        if user == secret:
+            guessed = True
 
-print("Congrats! The number was %i. You has %i guesses." % (secret, guesses))
+        print("%i cows, %i bulls" % (get_cows_and_bulls(secret, user)))
+
+    print(
+        "Congrats! The number is %s. You did %s attempts." %
+        (secret, attempts))
