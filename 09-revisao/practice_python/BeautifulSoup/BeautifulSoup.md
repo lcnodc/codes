@@ -329,25 +329,47 @@ A pesquisa com find_all é recursiva por padrão. Ou seja, o retorno será uma
 análise de todos os descendentes da tag pesquisada, suas filhas, filhas das
 filhas e assim por diante.
 
+Informando recursive false serão apresentada somente a pesquisa principal, ou
+seja, somente o filho direto.
+
+```python
+print(soup.find_all("p", recursive=False))
+```
 
 **find_parent e parents**
 
 Realiza uma pesquisa no documento para cima, considerando a tag atual.
 
+```python
+print([element for element in soup.find("p").parents])
+```
+
 **find_next_sibling e siblings**
 
-Itera sobre o resto de um elemento de next_sibling na árvore, retornando dos os
-elementos em que o argumento passado coincidir.
+Itera sobre o resto de um elemento de next_sibling na árvore, retornando todos
+os elementos em que o argumento passado coincidir.
+
+```python
+soup.find("div").find_next_sibling("div")
+```
 
 **find_previous_sibling e siblings**
 
 Itera sobre o resto de um elemento de previous_sibling na árvore, retornando
 dos os elementos em que o argumento passado coincidir.
 
+```python
+soup.find("div").find_previous_sibling("div")
+```
+
 **find_next e all_next**
 
 Itera sobre a próxima/todas a(s) tag(s) do documento, que coincidirem com o
 valor passado como argumento.
+
+```python
+soup.find("div").find_next("p")
+```
 
 **find_previous e all_previous**
 
@@ -355,11 +377,22 @@ Itera sobre as strings que anteriores à tag pesquisada no documento, sendo que
 find_previous retorna somente a primeira que e all retorna todas que
 coincidirem com o argumento.
 
+```python
+soup.find("div").find_previous("p")
+```
+
 **CSS Selectors**
 
 BS4 suporta a maioria dos seletores CSS utilizados, basta passar uma string
 dentro do método .select de um objeto Tag/BeautifulSoup.
 
+```python
+soup.select("title")
+soup.select("body a")
+soup.select("div > p:nth-of-type(3)")
+soup.select("div > #footer")
+soup.select(".sister")
+```
 
 ### Referências
 
