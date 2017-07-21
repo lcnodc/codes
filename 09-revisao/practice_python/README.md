@@ -51,7 +51,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 [14]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/list_remove_duplicates.py
 [15]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/reverse_word_order.py
 [16]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/password_generator.py
-[17]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/
+[17]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/decode_a_web_page.py
 [18]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/cows_and_bulls.py
 
 [1001]: http://www.practicepython.org/exercises/
