@@ -32,19 +32,40 @@ import random
 
 
 def get_secret_number():
-    return str(random.randint(1000, 9999))
+    """ Define the secret number and write it to a file.
+    """
+    secret_number = str(random.randint(1000, 9999))
+
+    with open("secret_number.txt", "w") as file:
+        print(secret_number, file=file)
+
+    return secret_number
 
 
 def get_cows_and_bulls(secret, user):
+    """Calculate the amount of cows and bulls.
+    """
     cows = bulls = 0
+    secret_chars = secret
 
-    for i in range(4):
-        if secret[i] == user[i]:
+    for i in range(len(secret)):
+        if user[i] == secret[i]:
             cows += 1
-        if secret[i] in user:
+        if user[i] in secret_chars:
             bulls += 1
+            secret_chars = remove_char(secret_chars, user[i])
 
     return cows, bulls
+
+
+def remove_char(s, c):
+    """Remove a char of the string.
+    When a user character exist in a secret_chars, add 1 to bulls and
+    remove it of secret_chars to don't duplicate the count
+    """
+    list_chars = list(s)
+    list_chars.remove(c)
+    return "".join(list_chars)
 
 
 if __name__ == "__main__":
