@@ -20,20 +20,15 @@ Credits:
 
 """
 
-# importa datetime do módulo datetime.
 from datetime import datetime
 
-nome = input("Qual o seu nome: ")
-# Perunta sobre a idade e converte para inteiro.
-idade = int(input("Qual a sua idade: "))
+name = input("What's your name?: ")
+age = int(input("How old is you?: "))
 
-# Recupera o ano utilizando datetime.
-ano_atual = datetime.now().year
-# Calcula o centésinmo aniversário.
-centenario = (100 - idade) + ano_atual
+current_year = datetime.now().year
+centenary = (100 - age) + current_year
 
-# Extras
-quantidade = int(input("Quantas vezes deseja exibir a mensagem? "))
+quantity = int(input("How many times do your like show this message? "))
 
-for i in range(quantidade):
-    print("%d - %s, você fará 100 anos em %d." % (i + 1, nome, centenario))
+for i in range(quantity):
+    print("%d - %s, your will be 100 years in %d." % (i + 1, name, centenary))
