@@ -41,6 +41,6 @@ if __name__ == "main":
     # soup = get_soup("https://goo.gl/csBVZj")
     soup = get_soup_file("vanity.html")
 
-    with open("saida.txt", "w") as other_file:
+    with open("out.txt", "w") as other_file:
         for element in soup.select("section p"):
             print(element.text + "\n", file=other_file)
