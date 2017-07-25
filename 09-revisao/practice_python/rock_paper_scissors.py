@@ -27,10 +27,7 @@ repeat = True
 while repeat:
     user = input("User, (r)ock, (p)aper, (s)cissors: ").lower()
     bot = ["r", "p", "s"][randint(0, 2)]
-
     print("User: %s\nBot: %s" % (user, bot))
-
     print(
         "Draw" if user == bot else ("User" if results[user] == bot else "Bot"))
-
     repeat = True if input("Try again? (s/n): ").lower() == "s" else False
