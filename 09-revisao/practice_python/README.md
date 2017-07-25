@@ -31,6 +31,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 17. [Decode a Web Page][17]
 18. [Cows and Bulls][18]
 19. [Decode a Web Page Two][19]
+20. [Element Seach][20]
 
 ### Rerências
 
@@ -55,6 +56,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 [17]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/decode_a_web_page.py
 [18]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/cows_and_bulls.py
 [19]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/decode_a_web_page_two.py
+[20]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/element_search.py
 
 [1001]: http://www.practicepython.org/exercises/
 [1002]: http://www.practicepython.org
