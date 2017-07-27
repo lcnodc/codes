@@ -17,8 +17,8 @@ example, which I will describe below.)
 import requests
 
 
-def get_text_web(path):
-    return requests.get(path).text
+def get_text_web(url):
+    return requests.get(url).text
 
 
 def write_to_file(filename, text):
