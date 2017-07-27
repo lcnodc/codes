@@ -34,6 +34,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 20. [Element Seach][20]
 21. [Write to a file][21]
 22. [Read from file][22]
+23. [File Overlap][23]
 
 ### Rerências
 
@@ -61,6 +62,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 [20]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/element_search.py
 [21]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/write_to_a_file.py
 [22]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/read_from_file.py
+[23]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/file_overlap.py
 
 [1001]: http://www.practicepython.org/exercises/
 [1002]: http://www.practicepython.org
