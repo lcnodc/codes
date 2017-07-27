@@ -17,14 +17,24 @@ example, which I will describe below.)
 import requests
 
 
-def get_soup_web(path):
-    """ Return the text of the url passed as argument."""
+def get_text_web(path):
     return requests.get(path).text
 
 
+def write_to_file(filename, text):
+    with open(filename, "w") as a_file:
+        print(text, file=a_file)
+    return filename
+
+
+def read_from_file(filename):
+    with open(filename, "r") as a_file:
+        return a_file.read()
+
+
 def split_text(text):
-    """Return a set of text's numbers passed as argument."""
-    return set(map(int, text.split("\n")))
+    return set(map(int, filter(
+        lambda n: True if n else False, text.split("\n"))))
 
 
 if __name__ == "__main__":
@@ -32,7 +42,14 @@ if __name__ == "__main__":
     prime_url = "http://www.practicepython.org/assets/primenumbers.txt"
     happy_url = "http://www.practicepython.org/assets/happynumbers.txt"
 
-    prime_set = split_text(get_soup_web(prime_url))
-    happy_set = split_text(get_soup_web(happy_url))
+    prime_set = split_text(
+        read_from_file(
+            write_to_file(
+                "prime.txt", get_text_web(prime_url))))
+
+    happy_set = split_text(
+        read_from_file(
+            write_to_file(
+                "happy.txt", get_text_web(happy_url))))
 
     print("Numbers that are overlaping:", sorted(prime_set & happy_set))
