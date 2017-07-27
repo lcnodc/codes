@@ -32,8 +32,8 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 18. [Cows and Bulls][18]
 19. [Decode a Web Page Two][19]
 20. [Element Seach][20]
-21. [Write to a file][21]
-22. [Read from file][22]
+21. [Write to a File][21]
+22. [Read from File][22]
 23. [File Overlap][23]
 
 ### Rerências
