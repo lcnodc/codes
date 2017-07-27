@@ -58,6 +58,15 @@ def count_words(text):
     return total_words
 
 
+def split_text(text):
+    letters, categories, images = set(), set(), set()
+    for line in text.split("\n"):
+        letters.add(line.split("/")[1])
+        categories.add(line.split("/")[2])
+        images.add(line.split("/")[3])
+    return len(categories)
+
+
 if __name__ == "__main__":
 
     filename = "names.txt"
@@ -66,3 +75,9 @@ if __name__ == "__main__":
         count_words(read_from_file(write_to_file(filename, get_soup_web(
             "http://www.practicepython.org/assets/nameslist.txt").get_text().
             strip()))))
+
+    print(
+        "Number of categories:",
+        split_text(get_soup_web(
+            "http://www.practicepython.org/assets/Training_01.txt").get_text().
+            strip()))
