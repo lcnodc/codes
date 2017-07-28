@@ -35,6 +35,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 21. [Write to a File][21]
 22. [Read from File][22]
 23. [File Overlap][23]
+24. [Draw a Game][24]
 
 ### Rerências
 
@@ -63,6 +64,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 [21]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/write_to_a_file.py
 [22]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/read_from_file.py
 [23]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/file_overlap.py
+[24]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/draw_a_game.py
 
 [1001]: http://www.practicepython.org/exercises/
 [1002]: http://www.practicepython.org
