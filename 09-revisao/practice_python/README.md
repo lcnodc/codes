@@ -36,6 +36,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 22. [Read from File][22]
 23. [File Overlap][23]
 24. [Draw a Game][24]
+25. [Guessing Game Two][25]
 
 ### Rerências
 
@@ -65,6 +66,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 [22]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/read_from_file.py
 [23]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/file_overlap.py
 [24]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/draw_a_game.py
+[25]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/guessing_game_two.py
 
 [1001]: http://www.practicepython.org/exercises/
 [1002]: http://www.practicepython.org
