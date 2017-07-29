@@ -58,28 +58,7 @@ winner_schema = [[0, 1, 2],
 
 def get_winner(positions):
 
-    player = 1
-
-    if positions[0] == positions[1] == positions[2] == player:
-        return "Player %i Wins!" % player
-    elif positions[3] == positions[4] == positions[5] == player:
-        return "Player %i Wins!" % player
-    elif positions[6] == positions[7] == positions[8] == player:
-        return "Player %i Wins!" % player
-    elif positions[0] == positions[3] == positions[6] == player:
-        return "Player %i Wins!" % player
-    elif positions[1] == positions[4] == positions[7] == player:
-        return "Player %i Wins!" % player
-    elif positions[2] == positions[5] == positions[8] == player:
-        return "Player %i Wins!" % player
-    elif positions[0] == positions[4] == positions[8] == player:
-        return "Player %i Wins!" % player
-    elif positions[2] == positions[4] == positions[6] == player:
-        return "Player %i Wins!" % player
-    else:
-
-        player = 2
-
+    for player in (1, 2):
         if positions[0] == positions[1] == positions[2] == player:
             return "Player %i Wins!" % player
         elif positions[3] == positions[4] == positions[5] == player:
@@ -96,8 +75,8 @@ def get_winner(positions):
             return "Player %i Wins!" % player
         elif positions[2] == positions[4] == positions[6] == player:
             return "Player %i Wins!" % player
-        else:
-            return "This game hasn't winner."
+    else:
+        return "This game hasn't winner."
 
 
 def get_positions(board):
