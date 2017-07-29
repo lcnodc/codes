@@ -37,6 +37,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 23. [File Overlap][23]
 24. [Draw a Game][24]
 25. [Guessing Game Two][25]
+26. [Check Tic Tac Toe][26]
 
 ### Rerências
 
