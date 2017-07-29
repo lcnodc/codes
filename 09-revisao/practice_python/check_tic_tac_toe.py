@@ -56,58 +56,58 @@ winner_schema = [[0, 1, 2],
 """
 
 
-def get_winner(board):
+def get_winner(positions):
+
     player = 1
+
+    if positions[0] == positions[1] == positions[2] == player:
+        return "Player %i Wins!" % player
+    elif positions[3] == positions[4] == positions[5] == player:
+        return "Player %i Wins!" % player
+    elif positions[6] == positions[7] == positions[8] == player:
+        return "Player %i Wins!" % player
+    elif positions[0] == positions[3] == positions[6] == player:
+        return "Player %i Wins!" % player
+    elif positions[1] == positions[4] == positions[7] == player:
+        return "Player %i Wins!" % player
+    elif positions[2] == positions[5] == positions[8] == player:
+        return "Player %i Wins!" % player
+    elif positions[0] == positions[4] == positions[8] == player:
+        return "Player %i Wins!" % player
+    elif positions[2] == positions[4] == positions[6] == player:
+        return "Player %i Wins!" % player
+    else:
+
+        player = 2
+
+        if positions[0] == positions[1] == positions[2] == player:
+            return "Player %i Wins!" % player
+        elif positions[3] == positions[4] == positions[5] == player:
+            return "Player %i Wins!" % player
+        elif positions[6] == positions[7] == positions[8] == player:
+            return "Player %i Wins!" % player
+        elif positions[0] == positions[3] == positions[6] == player:
+            return "Player %i Wins!" % player
+        elif positions[1] == positions[4] == positions[7] == player:
+            return "Player %i Wins!" % player
+        elif positions[2] == positions[5] == positions[8] == player:
+            return "Player %i Wins!" % player
+        elif positions[0] == positions[4] == positions[8] == player:
+            return "Player %i Wins!" % player
+        elif positions[2] == positions[4] == positions[6] == player:
+            return "Player %i Wins!" % player
+        else:
+            return "This game hasn't winner."
+
+
+def get_positions(board):
     positions = []
 
     for row_value in board:
         for col_value in row_value:
-            positions.append(True) if col_value == player \
-                else positions.append(False)
+            positions.append(col_value)
 
-    if positions[0] and positions[1] and positions[2]:
-        return "Player %i Wins!" % player
-    elif positions[3] and positions[4] and positions[5]:
-        return "Player %i Wins!" % player
-    elif positions[6] and positions[7] and positions[8]:
-        return "Player %i Wins!" % player
-    elif positions[0] and positions[3] and positions[6]:
-        return "Player %i Wins!" % player
-    elif positions[1] and positions[4] and positions[7]:
-        return "Player %i Wins!" % player
-    elif positions[2] and positions[5] and positions[8]:
-        return "Player %i Wins!" % player
-    elif positions[0] and positions[4] and positions[8]:
-        return "Player %i Wins!" % player
-    elif positions[2] and positions[4] and positions[6]:
-        return "Player %i Wins!" % player
-    else:
-        player = 2
-        positions = []
-
-        for row_value in board:
-                for col_value in row_value:
-                    positions.append(True) if col_value == player \
-                        else positions.append(False)
-
-        if positions[0] and positions[1] and positions[2]:
-            return "Player %i Wins!" % player
-        elif positions[3] and positions[4] and positions[5]:
-            return "Player %i Wins!" % player
-        elif positions[6] and positions[7] and positions[8]:
-            return "Player %i Wins!" % player
-        elif positions[0] and positions[3] and positions[6]:
-            return "Player %i Wins!" % player
-        elif positions[1] and positions[4] and positions[7]:
-            return "Player %i Wins!" % player
-        elif positions[2] and positions[5] and positions[8]:
-            return "Player %i Wins!" % player
-        elif positions[0] and positions[4] and positions[8]:
-            return "Player %i Wins!" % player
-        elif positions[2] and positions[4] and positions[6]:
-            return "Player %i Wins!" % player
-        else:
-            return "This game hasn't winner."
+    return positions
 
 
 if __name__ == "__main__":
@@ -115,4 +115,5 @@ if __name__ == "__main__":
     board = [[2, 2, 0],
              [2, 1, 0],
              [2, 1, 1]]
-    print(get_p1_positions(board))
+
+    print(get_winner(get_positions(board)))
