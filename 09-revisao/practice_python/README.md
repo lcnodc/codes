@@ -67,6 +67,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 [23]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/file_overlap.py
 [24]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/draw_a_game.py
 [25]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/guessing_game_two.py
+[26]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/check_tic_tac_toe.py
 
 [1001]: http://www.practicepython.org/exercises/
 [1002]: http://www.practicepython.org
