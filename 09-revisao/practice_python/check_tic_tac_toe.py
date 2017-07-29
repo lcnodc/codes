@@ -55,44 +55,43 @@ winner_schema = [[0, 1, 2],
 
 """
 
+import itertools
 
-def get_winner(positions):
 
-    for player in (1, 2):
-        if positions[0] == positions[1] == positions[2] == player:
-            return "Player %i Wins!" % player
-        elif positions[3] == positions[4] == positions[5] == player:
-            return "Player %i Wins!" % player
-        elif positions[6] == positions[7] == positions[8] == player:
-            return "Player %i Wins!" % player
-        elif positions[0] == positions[3] == positions[6] == player:
-            return "Player %i Wins!" % player
-        elif positions[1] == positions[4] == positions[7] == player:
-            return "Player %i Wins!" % player
-        elif positions[2] == positions[5] == positions[8] == player:
-            return "Player %i Wins!" % player
-        elif positions[0] == positions[4] == positions[8] == player:
-            return "Player %i Wins!" % player
-        elif positions[2] == positions[4] == positions[6] == player:
-            return "Player %i Wins!" % player
+def get_winner(players_positions):
+
+    win_positions = ((0, 1, 2), (3, 4, 5), (6, 7, 8), (0, 3, 6),
+                     (1, 4, 7), (2, 5, 8), (0, 4, 8), (2, 4, 6))
+
+    for win_position in win_positions:
+        for player in players_positions.keys():
+            if win_position in players_positions.get(player):
+                return "Player %i Wins!" % player
     else:
         return "This game hasn't winner."
 
 
-def get_positions(board):
+def get_players_positions(board):
     positions = []
+    players_positions = dict()
 
-    for row_value in board:
-        for col_value in row_value:
-            positions.append(col_value)
+    flat_board = [value for row in board for value in row]
 
-    return positions
+    for player in (1, 2):
+        for position, value in enumerate(flat_board):
+            if value == player:
+                positions.append(position)
+        players_positions[player] = \
+            list(itertools.permutations(positions[:], 3))
+        positions.clear()
+
+    return players_positions
 
 
 if __name__ == "__main__":
 
-    board = [[2, 2, 0],
+    board = [[1, 2, 0],
              [2, 1, 0],
              [2, 1, 1]]
 
-    print(get_winner(get_positions(board)))
+    print(get_winner(get_players_positions(board)))
