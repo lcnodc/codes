@@ -79,12 +79,12 @@ def get_winner(players_positions):
         return "This game hasn't winner."
 
 
-def get_players_positions(board):
+def get_players_positions(game):
     positions = []
     players_positions = dict()
 
     for player in (1, 2):
-        for num_row, row_value in enumerate(board):
+        for num_row, row_value in enumerate(game):
             for num_col, col_value in enumerate(row_value):
                 if col_value == player:
                     positions.append((num_row, num_col))
@@ -95,8 +95,19 @@ def get_players_positions(board):
 
 if __name__ == "__main__":
 
-    board = [[0, 2, 0],
-             [2, 1, 0],
-             [2, 1, 1]]
+    games = [[[2, 2, 0],
+              [2, 1, 0],
+              [2, 1, 1]],
+             [[1, 2, 0],
+              [2, 1, 0],
+              [2, 1, 1]],
+             [[0, 1, 0],
+              [2, 1, 0],
+              [2, 1, 1]],
+             [[1, 2, 0],
+              [2, 1, 0],
+              [2, 1, 2]]]
 
-    print(get_winner(get_players_positions(board)))
+    for game in games:
+        print(get_winner(get_players_positions(game)))
+
