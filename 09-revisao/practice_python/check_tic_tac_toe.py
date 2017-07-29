@@ -55,20 +55,26 @@ winner_schema = [[0, 1, 2],
 
 """
 
-import itertools
+
+def wins_positions():
+    return (((0, 0), (0, 1), (0, 2)), ((1, 0), (1, 1), (1, 2)),
+            ((2, 0), (2, 1), (2, 2)), ((0, 0), (1, 0), (2, 0)),
+            ((0, 1), (1, 1), (2, 1)), ((0, 2), (1, 2), (2, 2)),
+            ((0, 0), (1, 1), (2, 2)), ((0, 2), (1, 1), (2, 0)))
 
 
 def get_winner(players_positions):
 
-    win_positions = (((0, 0), (0, 1), (0, 2)), ((1, 0), (1, 1), (1, 2)),
-                     ((2, 0), (2, 1), (2, 2)), ((0, 0), (1, 0), (2, 0)),
-                     ((0, 1), (1, 1), (2, 1)), ((0, 2), (1, 2), (2, 2)),
-                     ((0, 0), (1, 1), (2, 2)), ((0, 2), (1, 1), (2, 0)))
+    busy_position = 0
 
-    for win_position in win_positions:
-        for player in players_positions.keys():
-            if win_position in players_positions.get(player):
-                return "Player %i Wins!" % player
+    for player in (1, 2):
+        for positions in wins_positions():
+            for position in positions:
+                if position in players_positions.get(player):
+                    busy_position += 1
+                    if busy_position == 3:
+                        return "Player %i wins." % player
+            busy_position = 0
     else:
         return "This game hasn't winner."
 
@@ -82,15 +88,14 @@ def get_players_positions(board):
             for num_col, col_value in enumerate(row_value):
                 if col_value == player:
                     positions.append((num_row, num_col))
-        players_positions[player] = \
-            list(itertools.permutations(positions[:], 3))
+        players_positions[player] = positions[:]
         positions.clear()
     return players_positions
 
 
 if __name__ == "__main__":
 
-    board = [[1, 2, 0],
+    board = [[0, 2, 0],
              [2, 1, 0],
              [2, 1, 1]]
 
