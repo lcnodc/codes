@@ -60,8 +60,10 @@ import itertools
 
 def get_winner(players_positions):
 
-    win_positions = ((0, 1, 2), (3, 4, 5), (6, 7, 8), (0, 3, 6),
-                     (1, 4, 7), (2, 5, 8), (0, 4, 8), (2, 4, 6))
+    win_positions = (((0, 0), (0, 1), (0, 2)), ((1, 0), (1, 1), (1, 2)),
+                     ((2, 0), (2, 1), (2, 2)), ((0, 0), (1, 0), (2, 0)),
+                     ((0, 1), (1, 1), (2, 1)), ((0, 2), (1, 2), (2, 2)),
+                     ((0, 0), (1, 1), (2, 2)), ((0, 2), (1, 1), (2, 0)))
 
     for win_position in win_positions:
         for player in players_positions.keys():
@@ -75,16 +77,14 @@ def get_players_positions(board):
     positions = []
     players_positions = dict()
 
-    flat_board = [value for row in board for value in row]
-
     for player in (1, 2):
-        for position, value in enumerate(flat_board):
-            if value == player:
-                positions.append(position)
+        for num_row, row_value in enumerate(board):
+            for num_col, col_value in enumerate(row_value):
+                if col_value == player:
+                    positions.append((num_row, num_col))
         players_positions[player] = \
             list(itertools.permutations(positions[:], 3))
         positions.clear()
-
     return players_positions
 
 
