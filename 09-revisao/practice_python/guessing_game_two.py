@@ -27,8 +27,8 @@ import random
 
 
 def get_secret_number(base, limit):
-    print("Enter a number from %i to %i: " % (base, limit), end="")
     secret = random.randint(base, limit)
+    print("Enter a number from %i to %i: " % (base, limit, secret))    
     print("%i" % secret)
     return secret
 
