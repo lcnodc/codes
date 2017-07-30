@@ -38,6 +38,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 24. [Draw a Game][24]
 25. [Guessing Game Two][25]
 26. [Check Tic Tac Toe][26]
+27. [Tic Tac Toe Draw][27]
 
 ### Rerências
 
@@ -69,6 +70,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 [24]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/draw_a_game.py
 [25]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/guessing_game_two.py
 [26]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/check_tic_tac_toe.py
+[27]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/tic_tac_toe_draw.py
 
 [1001]: http://www.practicepython.org/exercises/
 [1002]: http://www.practicepython.org
