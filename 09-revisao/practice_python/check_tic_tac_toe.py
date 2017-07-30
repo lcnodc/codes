@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Exercise 25: Check Tic Tac Toe
+"""Exercise 26: Check Tic Tac Toe
 
 This exercise is Part 2 of 4 of the Tic Tac Toe exercise series. The
 other exercises are: Part 1, Part 3, and Part 4.
