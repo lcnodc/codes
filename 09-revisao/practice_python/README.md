@@ -40,6 +40,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 26. [Check Tic Tac Toe][26]
 27. [Tic Tac Toe Draw][27]
 28. [Max of Three][28]
+29. [Tic Tac Toe Game][29]
 
 ### Rerências
 
@@ -73,6 +74,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 [26]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/check_tic_tac_toe.py
 [27]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/tic_tac_toe_draw.py
 [28]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/max_of_three.py
+[29]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/tic_tac_toe_game.py
 
 [1001]: http://www.practicepython.org/exercises/
 [1002]: http://www.practicepython.org
