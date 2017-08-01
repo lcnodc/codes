@@ -43,7 +43,7 @@ if __name__ == "__main__":
 
     sowpods_url = "http://norvig.com/ngrams/sowpods.txt"
 
-    print(choose_a_word(read_from_file("sowpods.txt")))
+    print("The word choosed is:", choose_a_word(read_from_file("sowpods.txt")))
 
     # It can take almost 4 minutes
     # print(choose_a_word(
