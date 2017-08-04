@@ -42,6 +42,8 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 28. [Max of Three][28]
 29. [Tic Tac Toe Game][29]
 30. [Pick Word][30]
+31. [Guess Letters][31]
+32. [Hangman][32]
 
 ### Rerências
 
@@ -77,6 +79,8 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 [28]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/max_of_three.py
 [29]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/tic_tac_toe_game.py
 [30]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/pick_word.py
+[31]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/guess_letters.py
+[32]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/hangman.py
 
 [1001]: http://www.practicepython.org/exercises/
 [1002]: http://www.practicepython.org
