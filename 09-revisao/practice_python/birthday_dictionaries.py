@@ -23,15 +23,13 @@ this:
 
 
 def get_persons():
-    persons = {"Ada Lovelace": "12/10/1815",
-               "Alan Turing": "06/23/1912",
-               "Albert Einstein": "03/14/1879",
-               "Benjamin Franklin": "01/17/1706",
-               "Guido Van Rossum": "01/31/1956",
-               "Isaac Newton": "01/04/1643",
-               "Linux Torvalds": "12/28/1969"}
-
-    return persons
+    return {"Ada Lovelace": "12/10/1815",
+            "Alan Turing": "06/23/1912",
+            "Albert Einstein": "03/14/1879",
+            "Benjamin Franklin": "01/17/1706",
+            "Guido Van Rossum": "01/31/1956",
+            "Isaac Newton": "01/04/1643",
+            "Linux Torvalds": "12/28/1969"}
 
 
 def get_person(name):
@@ -41,8 +39,8 @@ def get_person(name):
 
 if __name__ == "__main__":
 
-    print("Welcome to the birthday dictionary. We know the birthdays of:")
+    print("Welcome to the birthday dictionary. We know the birthdays of:\n")
     [print("\t" + name) for name, birthday in get_persons().items()]
 
-    name = input("Who's birthday do you want to look up? ")
-    print(name + "'s birthday is", get_person(name))
+    name = input("\nWho's birthday do you want to look up? ")
+    print("\n" + name + "'s birthday is", get_person(name))
