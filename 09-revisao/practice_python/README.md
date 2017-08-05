@@ -44,6 +44,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 30. [Pick Word][30]
 31. [Guess Letters][31]
 32. [Hangman][32]
+33. [Birthday Dictionaries][33]
 
 ### Rerências
 
@@ -81,6 +82,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 [30]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/pick_word.py
 [31]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/guess_letters.py
 [32]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/hangman.py
+[33]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/birthday_dictionaries.py
 
 [1001]: http://www.practicepython.org/exercises/
 [1002]: http://www.practicepython.org
