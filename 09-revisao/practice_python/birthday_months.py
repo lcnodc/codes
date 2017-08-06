@@ -43,14 +43,14 @@ def get_month_name(text_date):
     return month_name[:]
 
 
-def count_months(persons, months) -> dict:
+def count_months(persons, months: dict) -> dict:
     for name, birthday in persons.items():
         month_name = get_month_name(birthday)
         months[month_name] = months.get(month_name, 0) + 1
     return months
 
 
-def count_months2(persons, months) -> Counter:
+def count_months2(persons, months: list) -> Counter:
     for name, birthday in persons.items():
         months.append(get_month_name(birthday))
     return Counter(months)
