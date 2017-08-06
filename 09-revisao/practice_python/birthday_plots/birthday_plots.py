@@ -25,7 +25,6 @@ from bokeh.plotting import figure, show, output_file
 from datetime import date
 import json
 import requests
-import sys
 
 
 def get_text_web(url):
@@ -63,20 +62,56 @@ def get_axis_ordered(data: dict) -> tuple:
     return x_list, y_list
 
 
-def exit(message):
-    sys.exit(message)
+def make_plot(x, y, file_plot):
+
+    output_file(file_plot)
+
+    p = figure(plot_width=1200, plot_height=800, title="Birthday Plots",
+               x_range=x,)
+
+    # Set Title, Background and Border
+    p.title.text_color = "firebrick"
+    p.title.text_font = "arial"
+    p.title.text_font_style = "bold"
+    p.background_fill_color = "green"
+    p.background_fill_alpha = 0.50
+    p.border_fill_color = "whitesmoke"
+    p.min_border_left = 50
+
+    # Set X Axes
+    p.xaxis.axis_label = "Months"
+    p.xaxis.axis_label_text_color = "firebrick"
+    p.xaxis.axis_label_standoff = 15
+    p.xaxis.axis_line_width = 3
+    p.xaxis.axis_label_text_font_style = "bold"
+
+    # Set Y Axes
+    p.yaxis.axis_label = "Occurences"
+    p.yaxis.axis_label_text_color = "firebrick"
+    p.yaxis.axis_label_standoff = 15
+    p.yaxis.axis_line_width = 3
+    p.yaxis.axis_label_text_font_style = "bold"
+
+    # Set Lines
+    p.xgrid.grid_line_color = None
+    p.ygrid.grid_line_color = "black"
+    p.ygrid.grid_line_alpha = 0.5
+    p.ygrid.grid_line_dash = [6, 4]
+
+    # Set Legend
+    p.legend.location = "top_right"
+    p.legend.label_text_font = "arial"
+
+    p.vbar(x=x, top=y, width=0.75, color="firebrick")
+
+    return p
 
 
 if __name__ == "__main__":
 
-    output_file("bokeh_plots/plot.html")
-
     filename = "random_persons.json"
+    file_plot = "bokeh_plots/plot.html"
     url = "https://goo.gl/EQZpaE"
 
     x, y = get_axis_ordered(count_months(get_text_web(url), dict()))
-    p = figure(title="Birthday Plots", x_axis_label='Months',
-               y_axis_label='Occurrences', x_range=x, plot_width=1000)
-    p.vbar(x=x, top=y, width=0.5, color="firebrick")
-
-    show(p)
+    show(make_plot(x, y, file_plot))
