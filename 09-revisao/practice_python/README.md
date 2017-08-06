@@ -47,6 +47,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 33. [Birthday Dictionaries][33]
 34. [Birthday Json][34]
 35. [Birthday Months][35]
+36. [Birthday Plots][36]
 
 ### Rerências
 
@@ -87,6 +88,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 [33]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/birthday_dictionaries.py
 [34]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/birthday_json.py
 [35]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/birthday_months.py
+[36]: https://github.com/lcnodc/codes/tree/master/09-revisao/practice_python/birthday_plots
 
 [1001]: http://www.practicepython.org/exercises/
 [1002]: http://www.practicepython.org
