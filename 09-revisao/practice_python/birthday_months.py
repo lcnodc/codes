@@ -18,6 +18,7 @@ Your program should output something like:
     "December": 1
 }
 """
+
 from collections import Counter
 from datetime import date
 import json
@@ -42,17 +43,16 @@ def get_month_name(text_date):
     return month_name[:]
 
 
-def count_months(persons, months):
+def count_months(persons, months) -> dict:
     for name, birthday in persons.items():
         month_name = get_month_name(birthday)
         months[month_name] = months.get(month_name, 0) + 1
     return months
 
 
-def count_months2(persons, months):
+def count_months2(persons, months) -> Counter:
     for name, birthday in persons.items():
-        month_name = get_month_name(birthday)
-        months.append(month_name)
+        months.append(get_month_name(birthday))
     return Counter(months)
 
 
