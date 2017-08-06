@@ -46,6 +46,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 32. [Hangman][32]
 33. [Birthday Dictionaries][33]
 34. [Birthday Json][34]
+35. [Birthday Months][35]
 
 ### Rerências
 
@@ -85,6 +86,7 @@ Referente aos enunciados dos exercícios a [Michele Pratusevich][1003], de [Prac
 [32]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/hangman.py
 [33]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/birthday_dictionaries.py
 [34]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/birthday_json.py
+[35]: https://github.com/lcnodc/codes/blob/master/09-revisao/practice_python/birthday_months.py
 
 [1001]: http://www.practicepython.org/exercises/
 [1002]: http://www.practicepython.org
