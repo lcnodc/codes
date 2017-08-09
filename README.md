@@ -78,7 +78,7 @@ MATTHES, E. Python Crash Course: A hands-on, Project Based(...). San Francisco: 
 
 ROMANO, F. Learning Python: Learn to code like a professional(...). Birmingham: Packt Publishing, 2015. 443 p.
 
-[0]: https://github.com/lcnodc/codes/tree/master/00-introducao
+[0]: https://github.com/lcnodc/codes/tree/master/00_introducao
 [1]: https://github.com/lcnodc/codes/tree/master/01_variaveis_tipos_de_dados
 [2]: https://github.com/lcnodc/codes/tree/master/02_listas
 [6]: https://github.com/lcnodc/codes/tree/master/06-funcoes-e-escopos
