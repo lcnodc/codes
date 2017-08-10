@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-
-
 """Tuplas e Dicionários: Notas de Estudo.
 
 Tuplas são estruturas parecidas com listas, porém não podem ser 
