@@ -49,7 +49,7 @@ _Sugestões, correções e tudo mais serão muito bem vindas_.
 0. [Introdução: Instalação da linguagem, ambiente virtual e configuração de um editor][0]
 1. [Variáveis e Tipo de dados][1]
 2. [Listas][2]
-3. Tuples e dicionários, (MATTHES, 69), (ROMANO, 95);
+3. [Tuples e dicionários][3]
 4. If statements, iterators and making decisions, (MATTHES, 75), (ROMANO, 73);
 5. User input and while loops, (MATTHES, 117);
 6. [Funções e Escopos, (MATTHES, 133), (ROMANO, 107)][6];
@@ -81,5 +81,6 @@ ROMANO, F. Learning Python: Learn to code like a professional(...). Birmingham: 
 [0]: https://github.com/lcnodc/codes/tree/master/00_introducao
 [1]: https://github.com/lcnodc/codes/tree/master/01_variaveis_tipos_de_dados
 [2]: https://github.com/lcnodc/codes/tree/master/02_listas
+[3]: https://github.com/lcnodc/codes/tree/master/03_tuplas_dicts
 [6]: https://github.com/lcnodc/codes/tree/master/06-funcoes-e-escopos
 [9]: https://github.com/lcnodc/codes/tree/master/09-revisao
